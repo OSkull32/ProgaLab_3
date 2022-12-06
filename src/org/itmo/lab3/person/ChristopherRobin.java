@@ -20,6 +20,6 @@ public class ChristopherRobin extends Person{
     @Override
     public void grabBall(Actions action, Ball ball, Colours colour1, Colours colour2)
     {
-        System.out.println("поэтому "+ this.getName() + " пришлось, так и быть, " + action.getActionDescribe() + " с собой оба " + ball.getName() + "-- и " + colour1.getColourBall() + " и " + colour2.getColourBall());
+        System.out.println("поэтому "+ this.getName() + " пришлось, так и быть, " + action.getActionDescribe() + " с собой оба " + ball.getName() + "-- и " + colour1.getColourBall() + ", и " + colour2.getColourBall() + ".");
     }
 }
