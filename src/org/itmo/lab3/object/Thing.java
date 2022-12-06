@@ -1,17 +1,14 @@
-package org.itmo.lab3.things;
-
-import org.itmo.lab3.person.IAttachableName;
+package org.itmo.lab3.object;
 
 import java.util.Objects;
 
-public abstract class Thing implements IAttachableName {
+public class Thing {
     private String name;
 
-    protected Thing(String name) {
+    public Thing(String name) {
         this.setName(name);
     }
 
-    @Override
     public String getName() {
         return name;
     }

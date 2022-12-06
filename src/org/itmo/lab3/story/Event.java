@@ -1,17 +1,16 @@
 package org.itmo.lab3.story;
 
 
-import org.itmo.lab3.places.IActionable;
-import org.itmo.lab3.places.Place;
+import org.itmo.lab3.object.Place;
 
 import java.util.Objects;
 
 public class Event {
     private String event;
 
-    public Event(Actions action, IActionable what, Place where)
+    public Event(Actions action, Place where)
     {
-        event = action.getActionDescribe() + " на " + where.getName() + " " + what.getDescribe();
+        event = " " + action.getActionDescribe() + " на " + where.getName() + " ";
     }
     public String getEventDescribe() {
         return event;

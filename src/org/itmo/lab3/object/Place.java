@@ -1,13 +1,11 @@
-package org.itmo.lab3.places;
-
-import org.itmo.lab3.person.IAttachableName;
+package org.itmo.lab3.object;
 
 import java.util.Objects;
 
-public abstract class Place implements IActionable, IAttachableName {
+public class Place {
     private String name;
 
-    protected Place(String name){
+    public Place(String name){
         this.setName(name);
     }
 
@@ -15,12 +13,10 @@ public abstract class Place implements IActionable, IAttachableName {
         this.name = name;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public String getDescribe() {
         return getName();
     }
